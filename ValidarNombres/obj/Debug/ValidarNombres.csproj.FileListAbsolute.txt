@@ -1,0 +1,7 @@
+C:\Users\usuario\Documents\GitHub\ValidarNombres\ValidarNombres\bin\Debug\ValidarNombres.exe.config
+C:\Users\usuario\Documents\GitHub\ValidarNombres\ValidarNombres\bin\Debug\ValidarNombres.exe
+C:\Users\usuario\Documents\GitHub\ValidarNombres\ValidarNombres\bin\Debug\ValidarNombres.pdb
+C:\Users\usuario\Documents\GitHub\ValidarNombres\ValidarNombres\obj\Debug\ValidarNombres.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\ValidarNombres\ValidarNombres\obj\Debug\ValidarNombres.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\ValidarNombres\ValidarNombres\obj\Debug\ValidarNombres.exe
+C:\Users\usuario\Documents\GitHub\ValidarNombres\ValidarNombres\obj\Debug\ValidarNombres.pdb
