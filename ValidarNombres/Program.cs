@@ -23,87 +23,122 @@ namespace ValidarNombres
 
             string[] nombre = cadena.Split(' ');
 
-            foreach (var n in nombre[0])
+            if (nombre.Length < 2)
             {
-                if (n != ' ')
-                {
-                    cantLetras1 = cantLetras1 + 1;
-                    nom1 += n;
-                }
-            }
-
-            char a = '.';
-            foreach (var n in nombre[0])
-            {
-                if (n != '.')
-                {
-                }
-                else
-                {
-                     a = n;
-                }
-            }
-
-
-            foreach (var n in nombre[1])
-            {
-                if (n != ' ')
-                {
-                    cantLetras2 = cantLetras2 + 1;
-                    nom2 += n;
-                }
-            }
-            char b = '.';
-            foreach (var n in nombre[1])
-            {
-                if (n != '.')
-                {
-                }
-                else
-                {
-                     b = n;
-                }
-            }
-
-            foreach (var n in nombre[2])
-            {
-                if (n != ' ')
-                {
-                    cantLetras3 = cantLetras3 + 1;
-                    nom3 += n;
-                }
-            }
-
-            char c = '.';
-            foreach (var n in nombre[2])
-            {
-                if (n != '.')
-                {
-                }
-                else
-                {
-                    c = n;
-                }
-            }
-
-            if (cantLetras1 > 2 & a != '.')
-            {
-                Console.WriteLine("El primer nombre: {0}, es correcto", nom1);
+                Console.WriteLine("Debe ingresar minimo 2 o 3 términos.");
             }
             else
             {
-                Console.WriteLine("El primer nombre: {0}, es incorrecto", nom1);
+                foreach (var n in nombre[0])
+                {
+                    if (n != ' ')
+                    {
+                        cantLetras1 = cantLetras1 + 1;
+                        nom1 += n;
+                    }
+                }
+
+                char a = '.';
+                foreach (var n in nombre[0])
+                {
+                    if (n != '.')
+                    {
+                    }
+                    else
+                    {
+                        a = n;
+                    }
+                }
+
+
+                foreach (var n in nombre[1])
+                {
+                    if (n != ' ')
+                    {
+                        cantLetras2 = cantLetras2 + 1;
+                        nom2 += n;
+                    }
+                }
+                char b = '.';
+                foreach (var n in nombre[1])
+                {
+                    if (n != '.')
+                    {
+                    }
+                    else
+                    {
+                        b = n;
+                    }
+                }
+                if (nombre[2] != 0 )
+                {
+
+                }
+                foreach (var n in nombre[2])
+                {
+                    if (n != ' ')
+                    {
+                        cantLetras3 = cantLetras3 + 1;
+                        nom3 += n;
+                    }
+                }
+
+                char c = '.';
+                foreach (var n in nombre[2])
+                {
+                    if (n != '.')
+                    {
+                    }
+                    else
+                    {
+                        c = n;
+                    }
+                }
+
+                //A--------------------------------------------------------------------------------------
+
+
+                if (cantLetras1 > 2 & a != '.')
+                {
+                    Console.WriteLine("El primer nombre: {0}, es correcto", nom1);
+                }
+
+                if (cantLetras1 == 2 & a == '.')
+                {
+                    Console.WriteLine("El primer nombre: {0}, es correcto", nom1);
+                }
+
+                //B--------------------------------------------------------------------------------------
+
+
+                if (cantLetras2 > 2 & b != '.')
+                {
+                    Console.WriteLine("El segundo nombre: {0}, es correcto", nom2);
+                }
+
+                if (cantLetras2 == 2 & b == '.')
+                {
+                    Console.WriteLine("El segundo nombre: {0}, es correcto", nom2);
+                }
+
+
+                //C--------------------------------------------------------------------------------------
+
+
+                if (cantLetras3 > 2 & c != '.')
+                {
+                    Console.WriteLine("El tercer nombre: {0}, es correcto", nom3);
+                }
+
+                if (cantLetras1 == 2 & c == '.')
+                {
+                    Console.WriteLine("El tercer nombre: {0}, es incorrecto", nom3);
+                }
+
             }
-
-            if (cantLetras1 == 2 & a ==  '.')
-            {
-                Console.WriteLine("El primer nombre: {0}, es correcto", nom1);
-            }
-
-
-
-            Console.ReadKey();
+                Console.ReadKey();
         }
+
     }
 
 
